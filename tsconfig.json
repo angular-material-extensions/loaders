@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@angular-material-extensions/loaders": [
+        "dist/angular-material-extensions/loaders"
+      ],
+      "@angular-material-extensions/loaders/*": [
+        "dist/angular-material-extensions/loaders/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
