@@ -124,6 +124,47 @@
           }
         }
       }
-    }},
+    },
+    "@angular-material-extensions/loaders": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/angular-material-extensions/loaders",
+      "sourceRoot": "projects/angular-material-extensions/loaders/src",
+      "prefix": "mat",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-material-extensions/loaders/tsconfig.lib.json",
+            "project": "projects/angular-material-extensions/loaders/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-material-extensions/loaders/src/test.ts",
+            "tsConfig": "projects/angular-material-extensions/loaders/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-material-extensions/loaders/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-material-extensions/loaders/tsconfig.lib.json",
+              "projects/angular-material-extensions/loaders/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "loaders"
 }
