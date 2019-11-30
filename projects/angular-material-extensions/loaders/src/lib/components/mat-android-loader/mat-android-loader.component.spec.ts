@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoadersComponent } from './loaders.component';
+import { MatAndroidLoaderComponent } from './mat-android-loader.component';
 
-describe('LoadersComponent', () => {
-  let component: LoadersComponent;
-  let fixture: ComponentFixture<LoadersComponent>;
+describe('MatAndroidLoaderComponent', () => {
+  let component: MatAndroidLoaderComponent;
+  let fixture: ComponentFixture<MatAndroidLoaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoadersComponent ]
+      declarations: [ MatAndroidLoaderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LoadersComponent);
+    fixture = TestBed.createComponent(MatAndroidLoaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

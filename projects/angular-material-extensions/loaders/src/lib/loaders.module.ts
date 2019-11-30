@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { LoadersComponent } from './loaders.component';
+import { MatAndroidLoaderComponent } from './components/mat-android-loader/mat-android-loader.component';
 
 
 
 @NgModule({
-  declarations: [LoadersComponent],
+  declarations: [MatAndroidLoaderComponent],
   imports: [
   ],
-  exports: [LoadersComponent]
+  exports: []
 })
 export class LoadersModule { }
