@@ -7,6 +7,6 @@ import { MatAndroidLoaderComponent } from './components/mat-android-loader/mat-a
   declarations: [MatAndroidLoaderComponent],
   imports: [
   ],
-  exports: []
+  exports: [MatAndroidLoaderComponent]
 })
-export class LoadersModule { }
+export class MatLoadersModule { }

@@ -30,6 +30,7 @@
   },
   "scripts": {
     "build": "../../../node_modules/.bin/ng build @angular-material-extensions/loaders",
+    "build:watch": "../../../node_modules/.bin/ng build @angular-material-extensions/loaders --watch",
     "build:schematics": "../../../node_modules/.bin/tsc -p tsconfig.schematics.json",
     "clean": "rm -rf ../../../dist",
     "lint": "../../../node_modules/.bin/ng lint @angular-material-extensions/loaders",
