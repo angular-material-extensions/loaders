@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-mat-android-loader',
+  selector: 'mat-android-loader',
   templateUrl: './mat-android-loader.component.html',
   styleUrls: ['./mat-android-loader.component.scss']
 })
